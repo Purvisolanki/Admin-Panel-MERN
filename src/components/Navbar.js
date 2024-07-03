@@ -93,9 +93,9 @@ export default function PrimarySearchAppBar() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const handleSearchChange = (event) => {
-    dispatch(handleSearch(event.target.value));
-  };
+  // const handleSearchChange = (event) => {
+  //   dispatch(handleSearch(event.target.value));
+  // };
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
@@ -182,7 +182,7 @@ export default function PrimarySearchAppBar() {
               >
                 Notes App
               </Typography>
-              <Search >
+              {/* <Search >
                 <SearchIconWrapper>
                   <SearchIcon />
                 </SearchIconWrapper>
@@ -191,7 +191,7 @@ export default function PrimarySearchAppBar() {
                   onChange={handleSearchChange}
                   inputProps={{ 'aria-label': 'search' }}
                 />
-              </Search>
+              </Search> */}
             </>
           )}
           {location.pathname === '/profile' && (
